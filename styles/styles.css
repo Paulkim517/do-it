@@ -1,0 +1,10 @@
+.image{
+	margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.footer-social { float: right; margin-top:5px; height:30px; }
+.footer-social ul {float:left; padding:0; margin:0;}
+.footer-social li {float:left; list-style:none; margin-left:5px;}
+.footer-social span { float:left; }
