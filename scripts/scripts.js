@@ -1,15 +1,17 @@
 $(document).ready(function() {
 	
-	
-var ask = document.getElementById("ask");
-var audio = $("#doIt")[0];
 
-   $().click(function() {
-        //has to play the mp3 file shia.mp3 
-        audio.play();
+$('#start').on('click', function(e){
+  
+  e.preventDefault();
+	$('#test').get(0).play();
+
+
+
+})
       
   });
-});
+
 
 
 

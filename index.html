@@ -24,23 +24,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h1 class="text-center">Ask Shia LaBeouf Advice</h1>
+        <h1 class="text-center">Ask Shia LaBeouf For Advice</h1>
         <hr>
         <form class="text-center" id="ask-shia">
           <div class="form-group">
-            <input class="form-control" id="ask-shia" placeholder="Ask Shia for some advice.">
+            <input class="form-control" id="ask-shia" placeholder="Shia what should I do?" autofocus>
           </div>
           <div class="form-group">
-              <audio id="doIt" preload="" >
-                <!-- <source src="shia.ogg" type="audio/ogg">
-                <source src="shia.mp3" type="audio/mpeg"> -->
-                <source src="shia.mp4" type="audio/mp4">
-              </audio> 
-             <!--  <input type="submit" class ="Play" class="btn btn-success" value="Ask" id = "ask"> -->
+             
              <div id="container">
-            <button id="play">
-                Ask
-            </button>
+            <audio id="test" src='./audio/shia.mp3' type="audio/mp3"></audio>
+            <button type='submit' id="start"> Ask </button>
+                
           </div>
         </form>
         <hr>
@@ -56,18 +51,6 @@
 
 <p style="text-align:center">Any and all similarities to any people in real life are purely coincidence.</p>  
 
-<!-- <div class="footer-social">
-    <span>Check me out</span>
-    <li><a href="http://www.facebook.com">
-        <img src='http://www.womenactionmedia.org/cms/assets/themes/crate/images/social/facebook.png' />
-    </a></li>
-<li><a href="http://www.linkedin.com">
-    <img src='http://grfx.cstv.com/schools/wis/graphics/icon_twitter24.jpg' />
-</a></li>
-<li><a href="http://www.github.com">
-    <img src='http://mylzh.net/wiki/worldofwarcraft/images/5/5d/Icon-youtube-22x22.png' />
-</a></li> -->
-
 
   <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -77,28 +60,9 @@
 
 
   <!-- custom script -->
-    <!--<script type="text/javascript" src="scripts/scripts.js"></script> -->
+    <script type="text/javascript" src="scripts/scripts.js"></script> 
   
-<script>
-    $(document).ready(function() {
-       
-        var audioElement = document.createElement('audio');
-        audioElement.setAttribute('src', 'audio/shia.mp3');
-        audioElement.setAttribute('autoplay', 'autoplay');
-        //audioElement.load()
-
-        $.get();
-
-        audioElement.addEventListener("click", function() {
-            audioElement.Play();
-        }, true);
-
-        $('.play').click(function() {
-            audioElement.Play();
-        });
-
-    });
-</script>      
+     
 
 
 </body>
