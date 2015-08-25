@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html  ng-app="starter">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,18 +10,29 @@
 
   <!-- custom styles -->
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <!-- angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
 
   <title>Ask Shia LaBeouf Advice</title>
 </head>
 
-<body>
-  <div class ="container">
-    <div class = "row">
-    <div class="col-md-6 col-sm-offset-3">
-      <img src="images/shia.jpg" alt="" height="500" width="500" class="image">
+<body ng-controller="MainCtrl">
+   <ul class="nav nav-tabs">
+    <li role="presentation"><a href="askshialabeouf.bitballoon.com">Shia</a></li>
+    <li role="presentation"><a href="https://www.linkedin.com/in/paulkim517">Linkedin</a></li>
+    <li role="presentation"><a href="github.com/Paulkim517/">Github</a></li>
+  </ul>
+
+
+  <div class ="container" ng-controller="PicCtrl">
+     <div class = "row">
+    <div class="col-md-6 col-sm-offset-3" ng-show="beforeClick">
+      <img src="http://media.giphy.com/media/87xihBthJ1DkA/giphy.gif" alt= height="500" width="500" class="image">
     </div>
   </div>
   </div>
+
+  
 
   <div class="container">
     <div class="row">
@@ -48,8 +59,7 @@
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 <p style="text-align:center">Any and all similarities to any people in real life are purely coincidence.</p>  
 
