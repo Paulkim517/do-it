@@ -12,28 +12,33 @@
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <!-- angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script> 
 
   <title>Ask Shia LaBeouf Advice</title>
 </head>
 
-<body ng-controller="MainCtrl">
+<body ng-controller="PicCtrl">
+ 
+  <!-- NavBar -->
    <ul class="nav nav-tabs">
-    <li role="presentation"><a href="https://askshialabeouf.bitballoon.com">Shia</a></li>
+    <li role="presentation"><a href="https://www.youtube.com/watch?v=nuHfVn_cfHU">Shia</a></li>
+    <li role="presentation"><a href="http://paulsbkim.bitballoon.com/">Do it</a></li>
     <li role="presentation"><a href="https://www.linkedin.com/in/paulkim517">Linkedin</a></li>
     <li role="presentation"><a href="https://github.com/Paulkim517/">Github</a></li>
   </ul>
 
-
-  <div class ="container" ng-controller="PicCtrl">
+<!-- shia Gif -->
+  <div class ="container" >
      <div class = "row">
-    <div class="col-md-6 col-sm-offset-3" ng-show="beforeClick">
-      <img src="http://media.giphy.com/media/87xihBthJ1DkA/giphy.gif" alt= height="500" width="500" class="image">
+    <div class="col-md-6 col-sm-offset-3">
+      <p></p>
+      <img ng-src="{{photo}}" alt= height="500" width="500" class="image">
     </div>
   </div>
   </div>
 
   
-
+<!-- Form to ask -->
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
@@ -47,7 +52,7 @@
              
              <div id="container">
             <audio id="test" src='./audio/shia.mp3' type="audio/mp3"></audio>
-            <button type='submit' id="start"> Ask </button>
+            <button ng-click="ask()" type='submit' id="start"> Ask </button>
                 
           </div>
         </form>
@@ -57,9 +62,6 @@
   </div>
 
 <br>
-<br>
-<br>
-
 
 <p style="text-align:center">Any and all similarities to any people in real life are purely coincidence.</p>  
 
@@ -73,6 +75,7 @@
 
   <!-- custom script -->
     <script type="text/javascript" src="scripts/scripts.js"></script> 
+
   
      
 
