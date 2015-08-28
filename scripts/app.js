@@ -8,7 +8,7 @@ angular.module('starter',[])
 
 .controller("PicCtrl", ['$scope', function ($scope) {
   
-  $scope.photo = "../shia/images/shia.jpg"
+  $scope.photo = "https://nyoobserver.files.wordpress.com/2015/05/screen-shot-2015-05-26-at-6-24-09-pm.png"
   $scope.ask = function(){
   	$scope.photo = "http://media.giphy.com/media/87xihBthJ1DkA/giphy.gif"
   }
@@ -16,5 +16,3 @@ angular.module('starter',[])
 }]);
 
 
-
-// http://media.giphy.com/media/87xihBthJ1DkA/giphy.gif
